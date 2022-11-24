@@ -162,7 +162,7 @@ def update_post(post_id):
         return jsonify(post_added_failed_message)
 
 
-@app.route('/api/v1/<int:post_id>/delete-post', methods=["GET", "POST"])
+@app.route('/api/v1/<int:post_id>/delete-post', methods=["GET"])
 @jwt_required()
 def delete_post(post_id):
     '''
